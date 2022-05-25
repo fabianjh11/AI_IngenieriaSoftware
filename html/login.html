@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Restaurante, reservacion, comida">
+	<meta name="copyright" content="MACROSONY">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../fotos/Rest-Service.ico">
+	<link rel="stylesheet" type="text/css" href="../css/estilo_login.css">
+	<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<title>Rest-Service</title>
+</head>
+<body>
+	<nav class="Menu">
+			<ul>
+				<li>
+					<div class="Home" onclick="location.href='index.html'">
+						<h1 class="Nombre"><img src="../fotos/Rest-Service.png" alt="Logo de Rest-Service" title="Rest-Service" class="logo">Rest-Service</h>						 
+						<p class=Nombre2>®</p>
+					</div>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="Seccion">
+			<h2 class="Frase">Iniciar sesión en Rest-Service</h2>
+		</div>
+
+	<div class="posicion">
+		<div>
+			<img src="../fotos/gale1.jpg" alt="Logo de Rest-Service" title="Rest-Service" class="imagen">
+		</div>
+		<form class=formulario method="post" action="../php/iniciar_sesion.php">
+			<p>Tipo de cuenta: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+			<select class="caja" required="" name="rol">
+				<option value="">Elige una opción</option>
+				<option>Cliente</option>
+				<option>Restaurante</option>
+				<option>Administrador</option>
+			</select>
+			
+			<h2>Correo electrónico</h2>
+			<div>
+				<input type="email" class="entradas" required="" placeholder="Escriba su correo electrónico" name="correo">
+			</div>
+
+			<h2>Contraseña</h2>
+			<div>
+				<input type="password" class="entradas" required="" placeholder="Escriba su contraseña" name="password">
+			</div>
+				
+			<div>
+				<input type="submit" value="Iniciar sesión" class="entradas">
+			</div>
+
+			<div>
+				<h3>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></h3></p>
+			</div>
+
+		</form>
+		</div>
+	</div>
+
+	<footer>
+			<p class="Pie">
+				Todos los derechos reservados. Copyright (2022 - 2022) - Rest-Service
+			</p>
+	</footer>
+</body>
+</html>

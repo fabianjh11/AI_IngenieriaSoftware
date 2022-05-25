@@ -1,0 +1,186 @@
+  /*----------------------------------*/
+ /*        SELECTOR SUPERIOR         */
+/*----------------------------------*/
+.Menu
+{
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	height: 40px;
+	background-color: #F0F0F0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	opacity: 0.95;
+}
+li
+{
+	display: inline-block;
+}
+.Home
+{
+	position: relative;
+	cursor: pointer;
+	top: 6px;
+	left: 10px;
+}
+.Logo
+{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 3.5px;
+}
+.Nombre
+{
+	font-size: 18px;
+	display: inline;
+}
+.Nombre2
+{
+	font-size: 10px;
+	font-weight: bold;
+	display: inline;
+	position: absolute;
+}
+.Botones
+{
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.Boton
+{
+	background-color: #FFF;
+	border: 2px solid #FF8000;
+	font-weight: bold;
+	padding: 3px;
+	cursor: pointer;
+	border-radius: 3px;
+	margin: auto;
+}
+.Boton:hover
+{
+	background-color: #FEFEFE;
+	border: 2.5px solid #FFA010;
+	padding: 2.5px;
+}
+  /*-------------------------------------------*/
+ /*         PARTE AMARILLA DE ARRIBA          */
+/*-------------------------------------------*/
+.Seccion
+{
+	background-color: #FFC400;
+	height: 200px;
+	display: flex;
+}
+.Frase
+{
+	font-family: 'Belleza', sans-serif;
+	font-weight: lighter;
+	font-size: 60px;
+	margin: auto;
+}
+  /*-------------------------------------------*/
+ /*            CONTENIDO PRINCIPAL            */
+/*-------------------------------------------*/
+.Contenedor
+{
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+}
+.Registro
+{
+	margin: auto;
+	background-color: #86A923;
+	color: #F0F0F0;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	border: 2px solid #000;
+}
+.Registro p
+{
+	display: inline-block;
+	
+	width: 120px;
+	padding: 4px;
+}
+.Encabezado
+{
+	color: #1A1A1A;
+	font-weight: bolder;
+	background-color: #759812;
+}
+  /*-------------------------------------------*/
+ /*              PARTE INFERIOR               */
+/*-------------------------------------------*/
+.posicion {
+	display: flex;
+	max-width: 1200px;
+	position : center;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 18px;
+}
+
+.entradas{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	width: 70%;
+	padding: 18px;
+	margin: 18px 0;
+	border: none;
+	border-bottom: 4px solid #FF7A0E;
+	background: transparent;
+	color: #000000;
+}
+.entradas:focus {
+	background: linear-gradient(to bottom, transparent, #CFCFCF);
+	outline: none;
+	border-bottom: 4px solid #FF9948;
+}
+
+.formulario input[type="submit"] {
+	background: #FF7A0E;
+	color:  White;
+	text-align: center;
+	border-radius: 25px;
+	padding: 18px;
+	width: 160px;
+}
+.formulario input[type="submit"]:hover {
+	background: #FF9540;
+	color:  White;
+	text-align: center;
+	border-radius: 25px;
+	padding: 18px;
+	width: 160px;
+}
+.formulario input[type="submit"]:focus {
+	background: #FCA35C;
+}
+.formulario input[type="submit"]:active {
+	background: linear-gradient(to bottom, #FF9540, #FF7100);
+}
+  /*-------------------------------------------*/
+ /*               PIE DE PÁGINA               */
+/*-------------------------------------------*/
+footer
+{
+	position: relative;
+	background-color: #FF8000;
+	display: block;
+	text-align: center;
+}
+.Pie
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+}

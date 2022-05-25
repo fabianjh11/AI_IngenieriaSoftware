@@ -1,0 +1,291 @@
+  /*----------------------------------*/
+ /*        SELECTOR SUPERIOR         */
+/*----------------------------------*/
+.Menu
+{
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	height: 40px;
+	background-color: #F0F0F0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	opacity: 0.95;
+}
+li
+{
+	display: inline-block;
+}
+.Home
+{
+	position: relative;
+	cursor: pointer;
+	top: 6px;
+	left: 10px;
+}
+.Logo
+{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 3.5px;
+}
+.Nombre
+{
+	font-size: 18px;
+	display: inline;
+}
+.Nombre2
+{
+	font-size: 10px;
+	font-weight: bold;
+	display: inline;
+	position: absolute;
+}
+.Ubica
+{
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	top: 6px;
+	left: 40px;
+}
+.Ubica1
+{
+	width: 15px;
+	height: 15px;
+}
+.Ubica2
+{
+	font-weight: bold;
+	display: inline-block;
+}
+.Botones
+{
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.Boton
+{
+	background-color: #FFF;
+	border: 2px solid #FF8000;
+	font-weight: bold;
+	padding: 3px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.Boton:hover
+{
+	background-color: #FEFEFE;
+	border: 2.5px solid #FFA010;
+	padding: 2.5px;
+}
+  /*-------------------------------------------*/
+ /*         PARTE AMARILLA DE ARRIBA          */
+/*-------------------------------------------*/
+.Seccion
+{
+	display: block;
+	background-color: #FFC400;
+	height: 250px;
+	text-align: center;
+	align-items: center;
+}
+.Frase
+{
+	position: relative;
+	display: block;
+	font-family: 'Belleza', sans-serif;
+	font-size: 60px;
+	font-weight: lighter;
+	top: 30px;
+}
+.BotonReserva
+{
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	font-weight: bold;
+	color: #F0F0F0;
+	background-color: #86A923;
+	border-width: 0;
+	border-radius: 10px;
+	padding: 10px 50px;
+	cursor: pointer;
+	top: 75px;
+}
+.BotonReserva:hover
+{
+	background-color: #8CB41E;
+}
+  /*-------------------------------------------*/
+ /*            CONTENIDO PRINCIPAL            */
+/*-------------------------------------------*/
+.FlexContainer
+{
+	font-family: 'Open Sans', sans-serif;
+	color: green;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+	.Bloques
+	{
+		min-width: 300px;
+		max-width: 600px;
+		width: 500px;
+		height: 800px;
+	}
+	.Bloque1
+	{
+		min-width: 300px;
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-grow: 1;
+	}
+		.Items
+		{
+			width: 75%;
+			height: 25%;
+		}
+		.Item1
+		{
+			background-color: #404040;
+			padding: 5px;
+			border-radius: 4px;
+			object-fit: cover;
+		}
+		.Item2
+		{
+			font-weight: bold;
+			font-family: 'Montserrat', sans-serif;
+			background-color: #86A923;
+			color: #F0F0F0;
+			height: 60px;
+			font-size: 40px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		.Item2:hover
+		{
+			background-color: #8CB41E;
+		}
+		.Item3
+		{
+			background-color: #404040;
+			padding: 5px;
+			border-radius: 4px;
+			object-fit: cover;
+		}
+	.Bloque2
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+		.Objetos
+		{
+			width: 85%;
+			height: 45%;
+		}
+		.Objeto1
+		{
+			flex-grow: 2;
+			justify-content: center;
+			text-align: justify;
+		}
+		.Objeto1 p
+		{
+			min-width: 300px;
+			color: green;
+			padding: 7px;
+			font-size: 35px;
+		}
+		.Objeto2
+		{
+			background-color: #404040;
+			flex-grow: 1;
+			padding: 5px;
+			border-radius: 4px;
+			object-fit: cover;
+			height: 30%;
+			position: relative;
+			bottom: 50px;
+		}
+	.Bloque3
+	{
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-evenly;
+		flex-direction: column;
+		align-items: center;
+	}
+		.Elementos
+		{
+			width: 100%;
+			height: 50%;
+			flex-grow: 1;
+		}
+		.Elemento1
+		{
+			object-fit: cover;
+		}
+		.Elemento2
+		{
+			object-fit: cover;
+		}
+
+  /*-------------------------------------------*/
+ /*              PARTE INFERIOR               */
+/*-------------------------------------------*/
+.Abajo
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	text-align: center;
+	padding: 40px;
+}
+.Comentarios
+{
+	display: inline-block;
+}
+.ComentariosB
+{
+	display: inline-block;
+	color: #FFF;
+	background-color: #FFC400;
+	padding: 5px;
+	border-radius: 5px;
+	border-width: 0;
+	cursor: pointer;
+}
+.ComentariosB:Hover
+{
+	background-color: #FFD400;
+}
+
+  /*-------------------------------------------*/
+ /*               PIE DE PÁGINA               */
+/*-------------------------------------------*/
+footer
+{
+	position: relative;
+	background-color: #FF8000;
+	display: block;
+	text-align: center;
+}
+.Pie
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+}

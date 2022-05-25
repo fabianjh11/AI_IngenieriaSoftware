@@ -1,0 +1,127 @@
+  /*----------------------------------*/
+ /*        SELECTOR SUPERIOR         */
+/*----------------------------------*/
+.Menu
+{
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	height: 40px;
+	background-color: #F0F0F0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	opacity: 0.95;
+}
+li
+{
+	display: inline-block;
+}
+.Home
+{
+	position: relative;
+	cursor: pointer;
+	top: 6px;
+	left: 10px;
+}
+.Logo
+{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 3.5px;
+}
+.Nombre
+{
+	font-size: 18px;
+	display: inline;
+}
+.Nombre2
+{
+	font-size: 10px;
+	font-weight: bold;
+	display: inline;
+	position: absolute;
+}
+.Botones
+{
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.Boton
+{
+	background-color: #FFF;
+	border: 2px solid #FF8000;
+	font-weight: bold;
+	padding: 3px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.Boton:hover
+{
+	background-color: #FEFEFE;
+	border: 2.5px solid #FFA010;
+	padding: 2.5px;
+}
+
+  /*-------------------------------------------*/
+ /*            CONTENIDO PRINCIPAL            */
+/*-------------------------------------------*/
+
+.Seccion
+{
+	display: flex;
+	background-color: #FFC400;
+	height: 250px;
+}
+.Frase
+{
+	font-family: 'Belleza', sans-serif;
+	font-size: 60px;
+	font-weight: lighter;
+	margin: auto;
+}
+
+
+.Medio
+{
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	font-family: 'Belleza', sans-serif;
+	font-weight: bold;
+}
+.Contenido
+{
+	margin: auto;
+	background-color: #86A923;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	padding: 8px;
+	cursor: pointer;
+	width: 150px;
+}
+.Contenido:hover
+{
+	background-color: #B9DB56;
+}
+  /*-------------------------------------------*/
+ /*               PIE DE PÁGINA               */
+/*-------------------------------------------*/
+footer
+{
+	position: relative;
+	background-color: #FF8000;
+	display: block;
+	text-align: center;
+}
+.Pie
+{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+}

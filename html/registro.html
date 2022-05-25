@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="Restaurante, reservacion, comida">
+	<meta name="copyright" content="MACROSONY">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="../fotos/Rest-Service.ico">
+	<link rel="stylesheet" type="text/css" href="../css/estilo_registro.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Montserrat:wght@100&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<title>Registrarse - Rest-Service</title>
+</head>
+<body>
+	<nav class="Menu">
+		<ul>
+			<li>
+				<div class="Home" onclick="location.href='index.html'">
+					<div class="Logo">
+						<img src="../fotos/Rest-Service.png">
+					</div>
+					<h1 class="Nombre">Rest-Service</h1>
+					<p class=Nombre2>®</p>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	
+	<div class="yellowBox"> 
+		<h2 id="yellowBoxText"> Registrarse en Rest-Service</h2>
+	</div>
+
+	<br> <br> <br>
+
+	<div class="principal"> 
+		<form class="formulario" method="post" action="../php/registro.php">
+			<div class="superior">
+				<h1>Seleccione el tipo de cuenta que va a crear: </h1>
+				<select class="caja" required="" name="rol">
+					<option value="">Elige una opción</option>
+					<option>Cliente</option>
+					<option>Restaurante</option>
+					<option>Administrador</option>
+				</select>
+			</div>
+			
+			<div class="campos">
+				<div class="campo izquierda">
+					<div>
+						<p class="Texto" > Nombre(s) </p>
+						<input type="text" class="entradas" name="nombre" required="">
+					</div>
+
+					<div>
+						<p class="Texto"> Correo Electrónico </p>
+						<input type="email" class="entradas" name="correo" required="">
+					</div>
+
+					<div>
+						<p class="Texto"> Contraseña </p>
+						<input type="password" class="entradas"  name="password" required="" minlength="8" maxlength="30">
+					</div>
+				</div>
+
+				<div class="campo derecha">
+					<div>
+						<p class="Texto"> Apellido(s) </p>
+						<input type="text" class="entradas" name="apellido" required="">
+					</div>
+
+					<div>
+						<p class="Texto"> Teléfono </p>
+						<input type="number" class="entradas Tel" name="telefono" min="1000000000" max="9999999999" required="">
+					</div>
+					
+					<div>
+						<p class="Texto"> Confirmar contraseña </p>
+						<input type="password" class="entradas" name="password2" required="" minlength="8" maxlength="30">
+					</div>
+				</div>
+			</div>
+
+			<div id="inferior">
+				<div class="infObj inferiorIzq">
+					<input type="submit" value="Registrarse" class="entradas" >
+				</div>
+
+				<div class="infObj inferiorDer">
+					<p class="cuenta">¿Ya tienes una cuenta?</p>
+					<a href="login.html" class="green">Inicia Sesión</a>
+				</div>
+			</div>
+		</form>
+		<img src="../fotos/Restaurante2.jpg" alt="Entrada a restaurante" title="Recepción de restaurante" id="imagen">
+
+		<br> <br> <br>
+	</div>
+
+	<h3 class="footer">Todos los derechos reservados. Copyright (2022 - 2022) - Rest-Service.com</h3>
+</body>
+</html>

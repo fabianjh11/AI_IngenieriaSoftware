@@ -1,0 +1,91 @@
+Instancia: RestService
+Usuario: restservice
+Password: MacroSony
+
+--Roles: 1 - Admin, 2 - Restaurante, 3 - Cliente
+--Estados: 1 - Activo, 0 - Inactivo
+
+CREATE SCHEMA restaurante;
+
+CREATE TABLE restaurante.rol(
+    id INT NOT NULL,
+    nombre VARCHAR(15) NOT NULL,
+
+    CONSTRAINT pk_rol PRIMARY KEY(id)
+);
+
+CREATE TABLE restaurante.estado(
+    id INT NOT NULL,
+    nombre VARCHAR(15) NOT NULL,
+
+    CONSTRAINT pk_estado PRIMARY KEY(id)
+);
+
+CREATE TABLE restaurante.usuario(
+    correo TEXT NOT NULL,
+    password text NOT NULL,
+    nombre VARCHAR(30) NOT NULL,
+    apellido VARCHAR(30) NOT NULL,
+    telefono VARCHAR(10) NOT NULL,
+    estado INT DEFAULT '1',
+    rol INT NOT NULL,
+
+    CONSTRAINT pk_usuario PRIMARY KEY(correo),
+    CONSTRAINT fk_rol FOREIGN KEY(rol) REFERENCES restaurante.rol(id),
+    CONSTRAINT fk_estado FOREIGN KEY(estado) REFERENCES restaurante.estado(id)
+);
+
+CREATE TABLE restaurante.opinion(
+    id SERIAL,
+    id_cliente TEXT NOT NULL,
+    comentario TEXT NOT NULL,
+    fecha DATE NOT NULL DEFAULT CURRENT_DATE,
+    estado INT NOT NULL,
+    
+    CONSTRAINT pk_comenta PRIMARY KEY(id, id_cliente),
+    CONSTRAINT fk_cliente_c FOREIGN KEY(id_cliente) REFERENCES restaurante.usuario(correo),
+    CONSTRAINT fk_estado FOREIGN KEY(estado) REFERENCES restaurante.estado(id)
+);
+
+CREATE TABLE restaurante.zona(
+   id INT,
+   nombre VARCHAR(15),
+
+   CONSTRAINT pk_zona PRIMARY KEY(id)
+);
+
+CREATE TABLE restaurante.reservacion(
+    id SERIAL,
+    zona INT NOT NULL,
+    fecha VARCHAR(12) NOT NULL,
+    hora VARCHAR(12) NOT NULL,
+    cantidad INT NOT NULL,
+    estado INT NOT NULL,
+    
+    CONSTRAINT pk_reservacion PRIMARY KEY(id),
+    CONSTRAINT fk_estado FOREIGN KEY(estado) REFERENCES restaurante.estado(id),
+    CONSTRAINT fk_zona FOREIGN KEY(zona) REFERENCES restaurante.zona(id)
+);
+
+CREATE TABLE restaurante.cliente_reserva(
+    id_cliente TEXT NOT NULL,
+    id_reserva 	INT NOT NULL,
+
+    CONSTRAINT pk_reserva PRIMARY KEY(id_reserva),
+    CONSTRAINT fk_cliente_r FOREIGN KEY(id_cliente) REFERENCES restaurante.usuario(correo),
+    CONSTRAINT fk_reservacion FOREIGN KEY(id_reserva) REFERENCES restaurante.reservacion(id)
+);
+
+INSERT INTO restaurante.estado VALUES ('0', 'INACTIVO');
+INSERT INTO restaurante.estado VALUES ('1', 'ACTIVO');
+INSERT INTO restaurante.estado VALUES ('1', 'CANCELADO');
+
+INSERT INTO restaurante.rol VALUES ('1', 'ADMINISTRADOR');
+INSERT INTO restaurante.rol VALUES ('2', 'RESTAURANTE');
+INSERT INTO restaurante.rol VALUES ('3', 'CLIENTE');
+
+INSERT INTO restaurante.zona VALUES ('1', 'TERRAZA');
+INSERT INTO restaurante.zona VALUES ('2', 'VENTANAL');
+INSERT INTO restaurante.zona VALUES ('3', 'PARQUE');
+INSERT INTO restaurante.zona VALUES ('4', 'INTERIOR');
+INSERT INTO restaurante.zona VALUES ('5', 'PARED');

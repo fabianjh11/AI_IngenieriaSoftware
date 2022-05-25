@@ -1,0 +1,282 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+body {
+	background: rgb(0);
+}
+
+h1 {
+	color: rgb(0);
+	font-weight: bold;
+	font-size: 30px;
+}
+
+h2 {
+	display: flex;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+}
+
+p {
+	color: rgb(255);
+	font-size: 10px;
+}
+
+a {
+	color: #FF7A0E;
+	font-size: 18px;
+}
+
+.Menu
+{
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	height: 40px;
+	background-color: #F0F0F0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	opacity: 0.95;
+}
+li
+{
+	display: inline-block;
+}
+.Home
+{
+	position: relative;
+	cursor: pointer;
+	top: 6px;
+	left: 10px;
+}
+.Logo
+{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 3.5px;
+}
+.Nombre
+{
+	font-size: 18px;
+	display: inline;
+}
+.Nombre2
+{
+	font-size: 10px;
+	font-weight: bold;
+	display: inline;
+	position: absolute;
+}
+
+.yellowBox {
+ 	background: #F9D509;
+ 	height: 120px;
+	display: flex;
+ }
+
+#yellowBoxText {
+	color: rgb(0);
+	font-size: 45px;
+	font-family: 'Belleza', sans-serif;
+	font-weight: 10;
+	line-height: 1;
+	margin: auto;
+ }
+
+
+.principal {
+	width: 90%;
+	display: flex;
+	position: relative;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin: auto;
+}
+
+.superior{
+	text-align: center;
+	width: 800px;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.superiorOpciones{
+}
+
+.opcion{
+	margin-left: 80px;
+	margin-right: 5px;
+}
+
+.campos{
+	display: flex;
+	width: 800px;
+	margin-top: 20px;
+}
+
+.campo{
+	width: 200px;
+	flex-grow: 1;
+}
+
+.izquierda{
+	text-align: left;
+}
+
+.derecha{
+	text-align: left;
+}
+
+#inferior{
+	width: 800px;
+	display: flex;
+}
+
+.infObj{
+	display: flex;
+}
+
+.inferiorIzq{
+	width: 50%;
+	position: relative;
+	margin: auto;
+}
+
+.inferiorIzq input{
+	width: 130px;
+	margin: auto;
+	color: #FFF;
+	border-radius: 5px;
+}
+
+.inferiorDer{
+	width: 50%;
+	display: flex;
+	margin: auto;
+}
+.cuenta {
+	flex-grow: 0.5;
+	text-align: center;
+	font-size: 18px;
+	position: relative;
+}
+
+#imagen {
+	height: 400px;
+	width: 370px;
+	top: 10px;
+	position: absolute;
+	right: 10px;
+	object-fit: cover;
+}
+
+.Texto{
+	color: rgb(0);
+	font-size: 18px;
+	font-weight: bold;
+	display: inline;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{
+	-webkit-appearance: none; 
+	margin: 0;
+}
+
+input[type=number]{ 
+	-moz-appearance:textfield;
+}
+
+.formulario{
+	min-width: 300px;
+	max-width: 400px;
+	flex: 2;
+	text-align:  center;
+	padding: 8px;
+}
+
+.entradas {
+	font-size: 18px;
+	font-weight: bold;
+	width: 90%;
+	padding: 8px;
+	margin: 8px 0;
+	border: none;
+	border-bottom: 3px solid #FF7A0E;
+	background: transparent;
+	color: rgb(0);
+	display: inline;
+}
+
+.entradas:focus {
+	background: linear-gradient(to bottom, transparent, #CECECE);
+	outline: none;
+	border-bottom: 3px solid #FF9948;
+}
+
+.formulario input[type="submit"] {
+	background: #FF7A0E;
+	border-bottom: none;
+	padding: 8px;
+}
+
+.formulario input[type="submit"]:hover {
+	background: #FF9540;
+	border-bottom: none;
+	padding: 8px;
+}
+
+.formulario input[type="submit"]:focus {
+	background: #FCA35C;
+}
+
+.formulario input[type="submit"]:active {
+	background: linear-gradient(to bottom, #FF9540, #FF7100);
+}
+
+.formulario input[type="button"] {
+	color: rgb(255);
+	background: #1E1E1E;
+	border: 3px solid rgb(255);
+	padding: 8px;
+}
+
+.formulario input[type="button"]:hover {
+	background: #404040;
+	border: 3px solid rgb(255);
+	padding: 8px;
+}
+
+.formulario input[type="button"]:active {
+	background: linear-gradient(to bottom, #E0E0E0E0, #404040);
+}
+
+ .green {
+ 	color: #89B927;
+ }
+
+ #marcaRegistrada {
+ 	font-size: 18px;
+ 	color: rgb(0);
+ 	display: inline-block;
+ }
+
+.footer {
+	background: #FF7A0E;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	bottom: 0;
+}
+
+h3 {
+	color: rgb(0);
+	font-size: 14px;
+}

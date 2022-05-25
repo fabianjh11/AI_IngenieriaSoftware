@@ -1,0 +1,166 @@
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.Menu
+{
+	font-family: 'Montserrat', sans-serif;
+	display: block;
+	height: 40px;
+	background-color: #F0F0F0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	opacity: 0.95;
+}
+li
+{
+	display: inline-block;
+}
+.Home
+{
+	position: relative;
+	cursor: pointer;
+	top: 6px;
+	left: 10px;
+}
+.Logo
+{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 3.5px;
+}
+.Nombre
+{
+	font-size: 18px;
+	display: inline;
+}
+.Nombre2
+{
+	font-size: 10px;
+	font-weight: bold;
+	display: inline;
+	position: absolute;
+}
+.Botones
+{
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+.Boton
+{
+	background-color: #FFF;
+	border: 2px solid #FF8000;
+	font-weight: bold;
+	padding: 3px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+.Boton:hover
+{
+	background-color: #FEFEFE;
+	border: 2.5px solid #FFA010;
+	padding: 2.5px;
+}
+
+.Titulo{
+	display: flex;
+	height: 150px;
+	background-color: #ffc400;
+	align-content: center;
+}
+
+.Titulo1{
+	margin: auto;
+	font-size: 40px;
+}
+
+.Medio{
+	display: flex;
+	height: 600px;
+}
+
+.Cuestionario{
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 28px;
+	margin: auto;
+}
+
+.CuestionarioA {
+	display: inline-block;
+}
+
+.Cuestionario1{
+	display: block;
+	margin: 30px;
+}
+
+.Cuestionario2{
+	display: block;
+	margin: 30px;
+}
+
+.Cuestionario3{
+	display: block;
+	margin: 30px;
+}
+
+.Cuestionario4{
+	display: block;
+	margin: 30px;
+}
+
+.Cuestionario5{
+	display: block;
+	margin: 30px;
+	text-align: center;
+	font-weight: 1200;
+}
+
+.Mapa{
+	margin: auto;
+}
+
+.Mapa1{
+	font-size: 20px;
+	font-weight: bolder;
+	color: #fff;
+	display: flex;
+	text-align: center;
+}
+
+.Mapa1 p{
+    margin: auto;
+	background-color: #ff7a03;
+	border-radius: 5px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.Mapa1 p:hover{
+	background-color: #ff9c03;
+}
+
+.Mapa2 img{
+	padding-top: 10px;
+	display: block;
+	height: 500px;
+}
+
+footer{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	background-color: #ff7a03;
+}
+
+footer p{
+	font-weight: bold;
+	margin: auto;
+}

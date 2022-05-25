@@ -1,0 +1,64 @@
+F* {
+	font-family: 'Open sans', sans-serif;
+	font-weight: 18px;
+}
+
+body {
+	background: rgb(0);
+}
+
+.boton{
+	text-align: center;
+	border: none;
+}
+
+.boton input[type="button"] {
+	color: white;
+	background: #FF7A0E;
+	padding: 18px;
+	width: 160px;
+	border-radius: 25px;
+}
+
+.boton input[type="button"]:hover {
+	color: white;
+	background: #FF9540;
+	padding: 18px;
+	width: 160px;
+	border-radius: 25px;
+}
+
+.boton input[type="button"]:active {
+	background: linear-gradient(to bottom, #FF9540, #FF7100);
+}
+
+.boton input[type="button"]:focus {
+	background: #FCA35C;
+}
+
+.pizza {
+	border: 3px solid #000;
+	height: 330px;
+	width: 260px;
+	display: flex;
+	margin: auto;
+	margin-top: 50px;
+	object-fit: cover;
+}
+
+.textoError{
+	color: rgb(0);
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+.footer {
+	background: #FF7A0E;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	bottom: 0;
+}
